@@ -31,7 +31,7 @@ async def configure_wifi(request: Request, ssid: str = Form(...), password: str 
   renderer: networkd
   ethernets:
     eth0:
-      addresses: [192.168.3.1/24]
+      addresses: [192.168.2.1/24]
   wifis:
     wlan0:
       dhcp4: true

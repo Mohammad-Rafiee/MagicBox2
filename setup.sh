@@ -98,7 +98,7 @@ sudo cp $SETUP_DIR/50-cloud-init.yaml /etc/netplan/50-cloud-init.yaml
 sudo netplan apply
 sleep 5
 
-if ! ip a show eth0 | grep -q "192.168.3.1"; then
+if ! ip a show eth0 | grep -q "192.168.2.1"; then
     echo "⚠️  Network settings may not have applied correctly, rebooting..."
     sudo reboot
 fi
